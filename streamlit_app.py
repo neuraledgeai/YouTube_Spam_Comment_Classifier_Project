@@ -86,7 +86,7 @@ else:
     st.warning("Please enter a YouTube comment.")
 
 st.markdown("""
-<div style="text-align: center;">
+<div style="text-align: center; font-size: 0.8em; color: grey;">
 This project is proudly contributed to the open-source community. It is especially crafted for educational purposes and to demonstrate capabilities in natural language processing and machine learning.
 
 The entire project, including the code and model, is licensed under the **Apache License 2.0**.
