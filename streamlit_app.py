@@ -66,7 +66,10 @@ def make_prediction(raw_text, threshold=0.8):
 if comment.strip():
     # Make the prediction
     result = make_prediction(raw_text = comment, threshold = threshold)
-    if result == "Not Spam" st.success(f"This comment is {result}") else st.error(f"This comment is {result}")
+    if result == "Not Spam":
+    st.success(f"This comment is {result}")
+    else:
+    st.error(f"This comment is {result}")
     #st.success(f"This comment is {result}")
 else:
     st.warning("Please enter a YouTube comment.")
