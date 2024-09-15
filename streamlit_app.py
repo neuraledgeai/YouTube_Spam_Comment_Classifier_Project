@@ -71,7 +71,7 @@ if comment.strip():
     with col1:
         st.write(f"Threshold : {threshold}")
     with col2:
-        st.write(f"Classification Probability : {prob}")
+        st.write(f"Classification Probability : {round(prob, 2)}")
 
     
     if result == "Not Spam":
