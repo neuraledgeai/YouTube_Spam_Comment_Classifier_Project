@@ -88,6 +88,6 @@ else:
 st.markdown("""
 <div style="text-align: center; font-size: 0.8em; color: grey;">
 This project is proudly contributed to the open-source community. It is especially crafted for educational purposes and to demonstrate capabilities in natural language processing and machine learning.
-Thank you for visiting and testing out the model.
+Thank you.
 </div>
 """, unsafe_allow_html=True)
