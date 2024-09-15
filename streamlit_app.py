@@ -86,7 +86,7 @@ else:
     st.warning("Please enter a YouTube comment.")
 
 st.markdown("""
-### Acknowledgements
+
 
 This project is proudly contributed to the open-source community. It is especially crafted for educational purposes and to demonstrate capabilities in natural language processing and machine learning.
 
