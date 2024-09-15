@@ -51,6 +51,7 @@ If the score is above the threshold you set, the comment will be flagged as spam
 '''
 st.markdown(multi)
 st.markdown("For more information please check [this](%s)" % url)
+st.divider()
 
 #Make prediction method
 def make_prediction(raw_text, threshold=0.8):
