@@ -60,18 +60,18 @@ def make_prediction(raw_text, threshold=0.8):
         result = "Spam"
     else:
         result = "Not Spam"
-    return result
+    return result, prob
 
 # Placeholder for prediction result
 if comment.strip():
     # Initialize columns
     col1, col2 = st.columns(2)
     # Make the prediction
-    result = make_prediction(raw_text = comment, threshold = threshold)
+    result, prob = make_prediction(raw_text = comment, threshold = threshold)
     with col1:
         st.write(f"Threshold : {threshold}")
     with col2:
-        st.write(f"Classification Probability :")
+        st.write(f"Classification Probability : {prob}")
 
     
     if result == "Not Spam":
