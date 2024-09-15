@@ -65,7 +65,7 @@ def make_prediction(raw_text, threshold=0.8):
 # Placeholder for prediction result
 if comment.strip():
     # Initialize columns
-    col1, col2 = st.columns(3)
+    col1, col2 = st.columns(2)
     # Make the prediction
     result = make_prediction(raw_text = comment, threshold = threshold)
     with col1:
