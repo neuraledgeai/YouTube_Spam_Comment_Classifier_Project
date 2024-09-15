@@ -2,8 +2,6 @@ import streamlit as st
 import joblib
 from sklearn.ensemble import RandomForestClassifier
 import re
-#model = joblib.load('spam_classifier_model.pkl')
-# Load the model once
 
 # Load the saved model
 @st.cache(allow_output_mutation=True)  # Cache to avoid reloading the model multiple times
@@ -46,7 +44,6 @@ st.title("YouTube Spam Comment Classifier")
 comment = st.text_input("Enter a YouTube comment:")
 # Add a slider to adjust the threshold
 threshold = st.slider("Select the spam threshold", min_value=0.0, max_value=1.0, value=0.8)
-
 # Info about the slider
 url = "https://www.streamlit.io"
 multi = '''Think of the threshold as a spam "confidence meter." The model looks at each comment and assigns it a probability score, indicating how likely it is to be spam.,
@@ -54,23 +51,21 @@ If the score is above the threshold you set, the comment will be flagged as spam
 '''
 st.markdown(multi)
 st.markdown("check out this [link](%s)" % url)
+
+#Make prediction method
+def make_prediction(raw_text, threshold=0.8):
+    text = clean_comment(raw_text)
+    prob = model.predict_proba([text])[0][1]
+    if prob > threshold:
+        result = "Spam"
+    else:
+        result = "Not Spam"
+    return result
+
 # Placeholder for prediction result
 if comment.strip():
-    # Clean the comment
-    cleaned_comment = clean_comment(comment)
-    
-     # Make the prediction
-    prediction_prob = model.predict_proba([cleaned_comment])[0][1]  # Get the probability of being spam
-    
-    # Set a threshold (you can change this value if needed)
-    #threshold = 0.8
-    result = "Spam" if prediction_prob > threshold else "Not Spam"
+    # Make the prediction
+    result = make_prediction(raw_text = comment, threshold = threshold)
     st.success(f"This comment is {result}")
-    #st.write(f"This comment is : {result}, with a prediction probability of {round(prediction_prob,2)}")
 else:
     st.warning("Please enter a YouTube comment.")
-
-#st.title("YouTube Spam Comment Classifier")
-#st.write(f"Model Info: {model}")
-#prediction_prob = model.predict_proba([cleaned_comment])[0][1]
-#st.write(f"Prediction Probability: {prediction_prob}")
