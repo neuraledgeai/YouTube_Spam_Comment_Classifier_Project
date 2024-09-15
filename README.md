@@ -8,10 +8,14 @@ This project leverages a machine learning model to classify YouTube comments as 
 - Understanding threshold adjustment for prediction probabilities.
 - Deploying a machine learning model using **Streamlit** for live predictions.
 
+This project is a great resource for anyone who wants to learn how to build, evaluate, and deploy a machine learning model for real-world use cases. The goal is to inspire and enable others to apply similar techniques in their own projects, expanding their skills in machine learning and data science. Feel free to explore, learn, and contribute to this educational effort!
+
 ## Features
 - **Real-Time Classification**: Input a YouTube comment and see the model classify it as spam or not.
 - **Threshold Tuning**: Adjust the spam detection threshold to fine-tune the sensitivity of the model.
 - **Interactive Interface**: Explore the model through an intuitive, easy-to-use web interface.
+
+The threshold tuning feature is particularly important, as it gives users control over the model's sensitivity, making it adaptable to various use cases where the definition of spam might differ.
 
 ## How It Works
 
@@ -20,6 +24,8 @@ The core of this project is a **Random Forest** model trained on a dataset of Yo
 - **Higher Threshold**: More strict, fewer false positives (fewer comments incorrectly labeled as spam).
 - **Lower Threshold**: More lenient, catches more potential spam but may lead to more false positives.
 
+For example, if your primary concern is ensuring that **legitimate users’ comments are not blocked**, this higher threshold might be helpful.
+
 ## Access the Full Project
 
 For anyone interested in the full, detailed steps of this project, including everything from data importing, exploration, splitting, model building, tuning, evaluation, and prediction function to saving the model, please refer to the `YouTube_Spam_Comment_Classification.ipynb file`. This notebook is the heart of the project, containing all the comprehensive steps for creating the model.
@@ -27,6 +33,8 @@ For anyone interested in the full, detailed steps of this project, including eve
 Additionally, check out the **streamlit_app.py file**, which is designed to serve as the main backend for deploying the model as a web app. The app allows users to test comments in real time and classify them as "Spam" or "Not Spam" with adjustable threshold settings.
 
 ## Live Model in Action
+
+<img width="840" alt="Screenshot 2024-09-15 at 8 05 27 PM" src="https://github.com/user-attachments/assets/6cd4976a-0319-47dd-bdd7-585adc232508">
 
 Want to try the live model in action? Visit the web app here:
 [YouTube Spam Comments Classifier Web App](https://youtube-spam-comments-classifier-project.streamlit.app)
