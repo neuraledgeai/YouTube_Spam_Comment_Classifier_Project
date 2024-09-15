@@ -72,7 +72,7 @@ if comment.strip():
     with col1:
         st.write(f"Threshold : {threshold}")
     with col2:
-        st.write(f"Classification Probability : {round(prob, 2)}")
+        st.write(f"Classification Probability Score : {round(prob, 2)}")
 
     
     if result == "Not Spam":
@@ -84,3 +84,15 @@ if comment.strip():
     #st.success(f"This comment is {result}")
 else:
     st.warning("Please enter a YouTube comment.")
+
+st.markdown("""
+### Acknowledgements
+
+This project is proudly contributed to the open-source community. It is especially crafted for educational purposes and to demonstrate capabilities in natural language processing and machine learning.
+
+The entire project, including the code and model, is licensed under the **Apache License 2.0**.
+
+You can explore the source code, model building process, and the web app through the [GitHub repository](https://github.com/your-repo-link). Feel free to fork, experiment, and contribute!
+
+Thank you for visiting and testing out the YouTube Spam Comment Classifier.
+""")
