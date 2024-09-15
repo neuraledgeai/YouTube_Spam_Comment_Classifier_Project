@@ -85,9 +85,8 @@ if comment.strip():
 else:
     st.warning("Please enter a YouTube comment.")
 
-st.caption("""
-
-
+st.markdown("""
+<div style="text-align: center;">
 This project is proudly contributed to the open-source community. It is especially crafted for educational purposes and to demonstrate capabilities in natural language processing and machine learning.
 
 The entire project, including the code and model, is licensed under the **Apache License 2.0**.
@@ -95,4 +94,5 @@ The entire project, including the code and model, is licensed under the **Apache
 You can explore the source code, model building process, and the web app through the [GitHub repository](https://github.com/your-repo-link). Feel free to fork, experiment, and contribute!
 
 Thank you for visiting and testing out the YouTube Spam Comment Classifier.
-""")
+</div>
+""", unsafe_allow_html=True)
