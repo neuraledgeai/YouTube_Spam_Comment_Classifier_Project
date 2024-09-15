@@ -19,3 +19,16 @@ The core of this project is a **Random Forest** model trained on a dataset of Yo
 
 - **Higher Threshold**: More strict, fewer false positives (fewer comments incorrectly labeled as spam).
 - **Lower Threshold**: More lenient, catches more potential spam but may lead to more false positives.
+
+## Access the Full Project
+
+For anyone interested in the full, detailed steps of this project, including everything from data importing, exploration, splitting, model building, tuning, evaluation, and prediction function to saving the model, please refer to the `YouTube_Spam_Comment_Classification.ipynb file`. This notebook is the heart of the project, containing all the comprehensive steps for creating the model.
+
+Additionally, check out the **streamlit_app.py file**, which is designed to serve as the main backend for deploying the model as a web app. The app allows users to test comments in real time and classify them as "Spam" or "Not Spam" with adjustable threshold settings.
+
+## Live Model in Action
+
+Want to try the live model in action? Visit the web app here:
+[YouTube Spam Comments Classifier Web App](https://youtube-spam-comments-classifier-project.streamlit.app)
+
+*This project has been proudly contributed to the open-source community and is intended to serve as both an educational resource and a demonstration of the capabilities of machine learning in real-world applications. Whether you're here to learn, experiment, or build upon this work, we hope this project proves to be valuable.*
