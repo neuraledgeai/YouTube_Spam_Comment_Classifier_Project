@@ -1,6 +1,6 @@
 import streamlit as st
 import joblib
-# from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
 import re
 #model = joblib.load('spam_classifier_model.pkl')
 # Load the model once
