@@ -43,7 +43,7 @@ st.title("YouTube Spam Comment Classifier")
 # Add a text input for entering the comment
 comment = st.text_input("Enter a YouTube comment:")
 # Add a slider to adjust the threshold
-threshold = st.slider("Select the spam threshold", min_value=0.0, max_value=1.0, value=0.8)
+threshold = st.slider("Select the spam threshold", min_value=0.0, max_value=1.0, value=0.5)
 # Info about the slider
 url = "https://github.com/neuraledgeai/YouTube_Spam_Comment_Classifier_Project?tab=readme-ov-file#how-it-works"
 multi = '''Think of the threshold as a spam "confidence meter." The model looks at each comment and assigns it a probability score, indicating how likely it is to be spam.,
