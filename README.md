@@ -28,9 +28,9 @@ For example, if your primary concern is ensuring that **legitimate users’ comm
 
 ## Access the Full Project
 
-For anyone interested in the full, detailed steps of this project, including everything from data importing, exploration, splitting, model building, tuning, evaluation, and prediction function to saving the model, please refer to the `YouTube_Spam_Comment_Classification.ipynb file`. This notebook is the heart of the project, containing all the comprehensive steps for creating the model.
+For anyone interested in the full, detailed steps of this project, including everything from data importing, exploration, splitting, model building, tuning, evaluation, and prediction function to saving the model, please refer to the [`YouTube_Spam_Comment_Classification.ipynb file`](https://github.com/neuraledgeai/YouTube_Spam_Comment_Classifier_Project/blob/main/YouTube_Spam_Comment_Classification.ipynb). This notebook is the heart of the project, containing all the comprehensive steps for creating the model.
 
-Additionally, check out the **streamlit_app.py file**, which is designed to serve as the main backend for deploying the model as a web app. The app allows users to test comments in real time and classify them as "Spam" or "Not Spam" with adjustable threshold settings.
+Additionally, check out the [streamlit_app.py](https://github.com/neuraledgeai/YouTube_Spam_Comment_Classifier_Project/blob/main/streamlit_app.py) file, which is designed to serve as the main backend for deploying the model as a web app. The app allows users to test comments in real time and classify them as "Spam" or "Not Spam" with adjustable threshold settings.
 
 ## Live Model in Action
 
